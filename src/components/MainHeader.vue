@@ -23,32 +23,32 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 #primary_header_navigation{
   width:100%;
   position:sticky;
   top:0;
   background-color: rgba(0, 0, 0, 0.3);
-}
-#primary_header nav{
   
-}
-#primary_header_navigation ul{
-  display: flex ;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-  list-style: none;
-}
-#primary_header_navigation ul li{
-  padding:1rem;
+    
+  ul{
+    display: flex ;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    li{
+      padding:1rem;
+      
+      a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
   
-}
-#primary_header_navigation ul li a{
-  color: black;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 </style>
