@@ -32,5 +32,6 @@ export default {
 }
 body{
   font-family: 'Roboto Mono', monospace;
+  background-color: #1f1f22!important;
 }
 </style>

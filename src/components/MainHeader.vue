@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-light fixed-top">
+  <nav class="navbar bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Offcanvas navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -73,7 +73,6 @@ export default {
       padding: 1rem;
 
       a {
-        color: black;
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 600;
