@@ -9,29 +9,18 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
+            <!-- carousel image slider content-->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://wallpaperaccess.com/full/5487841.jpg" class="d-block w-100" alt="">
+                <div :class="['carousel-item', (index==0?'active':'')]" v-for="(slider_image, index) in slider_images" v-bind:key = "slider_image+index">
+                    <img :src="slider_image" class="d-block w-100" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://wallpaperaccess.com/full/5487841.jpg" class="d-block w-100" alt="">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://wallpaperaccess.com/full/5487841.jpg" class="d-block w-100" alt="">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
             </div>
+            <!-- carousel image slider content-->
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -97,8 +86,15 @@ export default {
     name: 'MainSlider',
     components: {
     },
-    data: () => ({
-    })
+    data() {
+        return {
+        slider_images: [
+                "https://wallpaperaccess.com/full/5487841.jpg",
+                "https://wallpaperaccess.com/full/5487841.jpg",
+                "https://wallpaperaccess.com/full/5487841.jpg",
+                ]
+        }
+    }
 }
 </script>
 
