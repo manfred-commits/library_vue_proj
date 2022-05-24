@@ -68,35 +68,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
-    width: 80%;
-    margin: auto;
-    padding-top: 5%;
-    color: white;
 
-    #carouselExampleCaptions {
-        img {
-            height: 500px;
-            object-fit: cover;
-        }
-    }
-
-    .card_container {
-        width: 100%;
-        padding: 1rem 0 1rem;
-
-        img {
-            height: 300px;
-            object-fit: cover;
-        }
-    }
-    .card{
-        background-color: rgb(20, 20, 20) !important;
-    }
-    .card-body{
-        background-color: rgb(20, 20, 20) !important;
-        border: 0;
-    }
-
-}
 </style>
