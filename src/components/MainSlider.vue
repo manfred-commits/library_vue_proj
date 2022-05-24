@@ -14,13 +14,14 @@
                 <div :class="['carousel-item', (index==0?'active':'')]" v-for="(slider_image, index) in slider_images" v-bind:key = "slider_image+index">
                     <img :src="slider_image" class="d-block w-100" alt="">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>{{slider_text_label[index]}}</h5>
+                        <p>{{slider_text_description[index]}}</p>
                     </div>
                 </div>
             </div>
             <!-- carousel image slider content-->
 
+            <!-- carousel directional buttons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,52 +32,10 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <div class="card_container">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card ">
-                        <img src="https://wallpaperaccess.com/full/5487841.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text ">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://wallpaperaccess.com/full/5487841.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://wallpaperaccess.com/full/5487841.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://wallpaperaccess.com/full/5487841.jpg" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- carousel directional buttons -->
 
         </div>
+        
     </main>
 </template>
 
@@ -88,11 +47,21 @@ export default {
     },
     data() {
         return {
-        slider_images: [
-                "https://wallpaperaccess.com/full/5487841.jpg",
-                "https://wallpaperaccess.com/full/5487841.jpg",
-                "https://wallpaperaccess.com/full/5487841.jpg",
-                ]
+            slider_images: [
+                    "https://wallpaperaccess.com/full/5487841.jpg",
+                    "https://wallpaperaccess.com/full/5487841.jpg",
+                    "https://wallpaperaccess.com/full/5487841.jpg",
+                    ],
+            slider_text_label: [
+                "Slide 1",
+                "Slide 2",
+                "Slide 3",
+            ],
+            slider_text_description: [
+                "Slide 1 description",
+                "Slide 2 description",
+                "Slide 3 description",
+            ]
         }
     }
 }

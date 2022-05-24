@@ -1,6 +1,9 @@
 <template>
   <MainHeader/>
-  <MainSlider/>
+  <main>
+    <MainSlider/>
+    <MainPostsSection/>
+  </main>
   <MainFooter/>
 </template>
 
@@ -8,6 +11,7 @@
 import MainHeader from './components/MainHeader.vue';
 import MainSlider from './components/MainSlider.vue';
 import MainFooter from './components/MainFooter.vue';
+import MainPostsSection from './components/MainPostsSection.vue';
 
 
 export default {
@@ -15,7 +19,8 @@ export default {
   components: {
     MainHeader,
     MainSlider,
-    MainFooter
+    MainFooter,
+    MainPostsSection
 }
 }
 </script>
