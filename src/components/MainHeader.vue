@@ -6,7 +6,9 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -59,12 +61,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+nav{
+  svg{
+    color: #0d6efd!important;
+    font-size: 1.5rem;
+    font-weight: 700;
+  };
+  .navbar-toggler-icon{
+    height:auto!important;
+  }
+}
+
 #primary_header_navigation {
   width: 100%;
   position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.3);
-
+  
 
   ul {
     display: flex;
